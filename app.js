@@ -6,7 +6,7 @@ let con = mysql.createConnection({
     host: '168.192.100.6',
     user: 'root',
     database: 'alumnos',
-    password: 'm0m3l0'
+    password: 'Recodo36'
 });
 con.connect(err =>{
     if(err){
