@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form action="/agregarUsuario" method="post">
+        <table>
+            <tr>
+                <td>Ingresa tu boleta: </td>
+                <td><input type="number" name="bol" id="bol" placeholder="Escribe tu boleta"></td>
+            </tr>
+            <tr>
+                <td>Ingresa tu nombre:</td>
+                <td><input type="text" name="nom" id="nom" placeholder="Escribe tu nombre"></td>
+            </tr>
+            <tr>
+                <td>Ingresa tu apellido paterno:</td>
+                <td><input type="text" name="appat" id="appat" placeholder="Escribe tu apellido paterno"></td>
+            </tr>
+            <tr>
+                <td>Ingresa tu apellido materno:</td>
+                <td><input type="text" name="apmat" id="apmat" placeholder="Escribe tu apellido materno"></td>
+            </tr>
+            <tr>
+                <td>Ingresa tu número telefónico:</td>
+                <td><input type="number" name="tel" id="tel" placeholder="Escribe tu teléfono"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><input type="submit" value="Agregar Usuario"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
