@@ -1,39 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <form action="/agregarUsuario" method="post">
-        <table>
-            <tr>
-                <td>Ingresa tu boleta: </td>
-                <td><input type="number" name="bol" id="bol" placeholder="Escribe tu boleta"></td>
-            </tr>
-            <tr>
-                <td>Ingresa tu nombre:</td>
-                <td><input type="text" name="nom" id="nom" placeholder="Escribe tu nombre"></td>
-            </tr>
-            <tr>
-                <td>Ingresa tu apellido paterno:</td>
-                <td><input type="text" name="appat" id="appat" placeholder="Escribe tu apellido paterno"></td>
-            </tr>
-            <tr>
-                <td>Ingresa tu apellido materno:</td>
-                <td><input type="text" name="apmat" id="apmat" placeholder="Escribe tu apellido materno"></td>
-            </tr>
-            <tr>
-                <td>Ingresa tu número telefónico:</td>
-                <td><input type="number" name="tel" id="tel" placeholder="Escribe tu teléfono"></td>
-            </tr>
-            <tr>
-                <td rowspan="2"><input type="submit" value="Agregar Usuario"></td>
-            </tr>
-        </table>
-    </form>
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-6">
+    <h1 class="text-2xl font-semibold mb-4">Crear Usuario</h1>
+    <div class="max-w-md mx-auto bg-white shadow-md rounded-md p-6">
+      <form method="POST" action="/agregarUsuario" class="space-y-4">
+        <div class="flex space-x-4">
+          <div class="w-1/2">
+            <label for="bol" class="block text-sm font-medium text-gray-700"
+              >Ingresa tu boleta:</label
+            >
+            <input
+              type="number"
+              name="bol"
+              id="bol"
+              placeholder="Escribe tu boleta"
+              required
+              class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200 focus:ring-opacity-50 focus:outline-none focus:border-indigo-300" />
+          </div>
+          <div class="w-1/2">
+            <label for="aPat" class="block text-sm font-medium text-gray-700"
+              >Ingresa tu apellido paterno:</label
+            >
+            <input
+              type="text"
+              name="aPat"
+              id="aPat"
+              placeholder="Escribe tu apellido paterno"
+              required
+              class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200 focus:ring-opacity-50 focus:outline-none focus:border-indigo-300" />
+          </div>
+        </div>
+        <div class="flex space-x-4">
+          <div class="w-1/2">
+            <label for="aMat" class="block text-sm font-medium text-gray-700"
+              >Ingresa tu apellido materno:</label
+            >
+            <input
+              type="text"
+              name="aMat"
+              id="aMat"
+              placeholder="Escribe tu apellido materno"
+              required
+              class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200 focus:ring-opacity-50 focus:outline-none focus:border-indigo-300" />
+          </div>
+          <div class="w-1/2">
+            <label for="nombre" class="block text-sm font-medium text-gray-700"
+              >Ingresa tu nombre:</label
+            >
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Escribe tu nombre"
+              required
+              class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200 focus:ring-opacity-50 focus:outline-none focus:border-indigo-300" />
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="tel" class="block text-sm font-medium text-gray-700"
+            >Ingresa tu semestre:</label
+          >
+          <input
+            type="text"
+            name="tel"
+            id="tel"
+            placeholder="Escribe tu semestre"
+            required
+            class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md focus:ring focus:ring-indigo-200 focus:ring-opacity-50 focus:outline-none focus:border-indigo-300" />
+        </div>
+        <div class="text-center">
+          <input
+            type="submit"
+            value="Agregar Usuario"
+            class="px-4 py-2 font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
